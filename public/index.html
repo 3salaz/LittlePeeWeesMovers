@@ -4,86 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style/master.css">
     <title>Little Pee Wee's Moving</title>
 </head>
 <body>
-    <div id="nav" class="row">
-        <div class="container flex">
-            <div class="logo">
-                <img id="logoIcon" ref="Icon Of Our Pee Wee Cartoon Head">
-                <h5 id="logoText">Little Pee Wee's Movers</h5>
-            </div>
-            <div class="navbar">
-                <div class="ul flex-right">
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </div>
-            </div>
-            <div class="mobile-nav-trigger hide-tab-up">
-                <img id="navTrigger" src="" alt="Home Icon">
-            </div>
+    <!-- NAV -->
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo hide-on-med-and-down"><p>Little Pee Wee's Movers</p></a>
+          <a href="#!" class="brand-logo hide-on-large-only"><img src="./images/Icons-Mover.png" alt="123"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">Javascript</a></li>
+            <li><a href="mobile.html">Mobile</a></li>
+          </ul>
         </div>
-    </div>
-    <!-- Mobile Nav -->
-    <div class="mobile-navbar">
-        <div class="ul flex-down">
-            <li>Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
-        </div>
-    </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <header><h5 class="center title">Little Pee Wee's Movers</h5></header>
+        <li><a href="sass.html">Home</a></li>
+        <li><a href="badges.html">About</a></li>
+        <li><a href="collapsible.html">Services</a></li>
+        <li><a href="mobile.html">Contact</a></li>
+      </ul>
+    <!-- Action BTN -->
     <div class="floating-action-btn"></div>
     <main class="row">
         <header class="full-width-responsive">
-            <img src="" alt="">
-            <div class="overlay">
-                <h4>Little Pee Wee's Movers</h4>
-                <section>
-                    <div class="action-btn">Get A Quote</div>
-                    <p>Available Monday-Friday 9am-6pm</p>
-                </section>
-                <section class="social-links">
-                    <ul class="flex-right">
-                        <li><i></i></li>
-                        <li><i></i></li>
-                        <li><i></i></li>
-                    </ul>
-                </section>
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="./images/moving-boxes-2.jpeg">
+                    <div class="overlay">
+                        <p>Need some mover?</p>
+                        <div class="btn center">Get A Quote!</div>
+                    </div>
+                </div>
             </div>
         </header>
-        <section id="services">
-            <h2>Moving</h2>
-            <div id="moving" class="flex-box">
-                <h3>Moving</h3>   
-            </div>
-            <div class="moving-cards">
-                <div class="card shadow"></div>
-                <div class="card shadow"></div>
-                <div class="card shadow"></div>
-            </div>
-            <div id="equiptment" class="flex-box">
-                <h3>Equiptment</h3>
-            </div>
-            <div id="storage" class="flex-box">
-                <h3>Storage</h3>
+        <section id="about" class="container">
+            <h2 class="title center">Little Pee Wee's Movers</h2>
+            <p class="tagline">Reliable Movers Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dolorum accusamus rem voluptatem ullam, quo in esse, totam aliquid ipsa modi labore pariatur quasi maiores quod. Architecto dolores natus error.</p>
+        </section>
+        <section id="services" class="container">
+            <h2>Services</h2>
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="./images/moving-4.jpeg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Moving<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#"></a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Moving<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="./images/packing-2.jpeg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Packing<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#"></a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Packing<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="./images/staging-2.jpeg">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Staging<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#"></a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Staging Services<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <h3 class="tagline">Reliable Movers</h3>
-        </section>
-        <section id="contact">
-            <form action="">
-                <h1>Let's schedule your move asap!</h1>
+        <section id="contact" class="container">
+            <form action="" class="contact-form">
+                <h3>Let's schedule your move asap!</h3>
                 <p>Fill out the contact form below!🚀</p>
             </form>
         </section>
     </main>
 
     <aside></aside>
-    <div id="footer"></div>
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Thank you for visiting</h5>
+              <p class="grey-text text-lighten-4">You can browse our selection of services above and email or call now to get quotes for your next move</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Social Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Yelp</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Google</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2021 Copyright <span class="yellow-text">Little Pee Wee's Movers</span>
+          <a class="grey-text text-lighten-4 right" href="#!">Link Tree</a>
+          </div>
+        </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

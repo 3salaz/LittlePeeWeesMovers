@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+$base-color-red: #C73930;
+$base-color-yellow: #F1EF46;
+$base-color-green: #575918;
+$base-color-grey: #646464;
+$base-color-black: #1B1717;
+$base-color-white: #ebebeb;
+
+.title{
+    font-family: 'Luckiest Guy', cursive;
+}
+nav{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    .sidenav-trigger{
+        color:$base-color-red;
+    }
+    .brand-logo{
+        font-family: 'Luckiest Guy', cursive;
+        height: 100%;
+        img{
+            height: 100%;
+        }
+    }
+}
+
+header{
+    .parallax{
+
+    }
+    .overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        p{
+            font-family: 'Luckiest Guy', cursive;
+            color: $base-color-white;
+            font-size: 3em;
+        }
+        .btn{
+            background-color: $base-color-red;
+        }
+    }
+}
+footer.page-footer{
+    background-color: $base-color-red;
+}

@@ -1,1 +1,48 @@
-/* No CSS *//*# sourceMappingURL=master.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("");
+
+.title {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+nav {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+nav .sidenav-trigger {
+  color: #C73930;
+}
+
+nav .brand-logo {
+  font-family: 'Luckiest Guy', cursive;
+  height: 100%;
+}
+
+nav .brand-logo img {
+  height: 100%;
+}
+
+header .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+header .overlay p {
+  font-family: 'Luckiest Guy', cursive;
+  color: #ebebeb;
+  font-size: 3em;
+}
+
+header .overlay .btn {
+  background-color: #C73930;
+}
+
+footer.page-footer {
+  background-color: #C73930;
+}
+/*# sourceMappingURL=master.css.map */
