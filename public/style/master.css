@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
-@import url("");
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap");
 .title {
   font-family: 'Luckiest Guy', cursive;
+  color: #C73930;
+}
+
+body * {
+  font-family: 'Lato', sans-serif;
 }
 
 nav {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
+  z-index: 10;
 }
 
 nav .sidenav-trigger {
@@ -17,10 +22,32 @@ nav .sidenav-trigger {
 nav .brand-logo {
   font-family: 'Luckiest Guy', cursive;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .brand-logo p {
+  margin: 0;
+  padding: 0;
 }
 
 nav .brand-logo img {
   height: 100%;
+}
+
+nav ul li a {
+  color: #1B1717;
+}
+
+nav ul li:hover {
+  background-color: #575918;
 }
 
 header .overlay {
@@ -40,6 +67,53 @@ header .overlay p {
 
 header .overlay .btn {
   background-color: #C73930;
+}
+
+#services {
+  background-color: #ebebeb;
+  padding: 1em;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-wrapper .col:nth-child(3) {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.card-wrapper .col:nth-child(3) .card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.card-wrapper .col:nth-child(3) img {
+  padding: 0 3em;
+  margin: 0 1em;
+}
+
+.card-wrapper .col:nth-child(3) .card-content {
+  padding: 0 1em;
+  text-align: center;
+}
+
+.contact-form {
+  border: solid #1B1717 0.2em;
+  border-radius: 1em;
 }
 
 footer.page-footer {

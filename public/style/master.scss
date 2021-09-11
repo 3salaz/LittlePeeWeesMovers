@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&display=swap');
 
 $base-color-red: #C73930;
 $base-color-yellow: #F1EF46;
@@ -7,24 +8,48 @@ $base-color-grey: #646464;
 $base-color-black: #1B1717;
 $base-color-white: #ebebeb;
 
+// Helpers
 .title{
     font-family: 'Luckiest Guy', cursive;
+    color: $base-color-red;
 }
+body *{
+    font-family: 'Lato', sans-serif;
+}
+// Nav
 nav{
     position: absolute;
     background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
     .sidenav-trigger{
         color:$base-color-red;
     }
     .brand-logo{
         font-family: 'Luckiest Guy', cursive;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p{
+            margin: 0;
+            padding: 0;
+        }
         img{
             height: 100%;
         }
     }
+    ul{
+        li{
+            a{
+                color: $base-color-black;
+            }
+        }
+        li:hover{
+            background-color: $base-color-green;
+        }
+    }
 }
-
+// Header
 header{
     .parallax{
 
@@ -44,6 +69,38 @@ header{
             background-color: $base-color-red;
         }
     }
+}
+// Services
+#services{
+    background-color: $base-color-white;
+    padding: 1em;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .col:nth-child(3){
+        .card{
+            box-shadow: none;
+            background-color: rgba(255, 255, 255, 0);
+        }
+        img{
+            padding: 0 3em;
+            margin: 0 1em;
+        }
+        .card-content{
+            padding: 0 1em;
+            text-align: center;
+        }
+        border: none;
+        box-shadow: none;
+    }
+
+}
+.contact-form{
+    border: solid $base-color-black .2em;
+    border-radius: 1em;
 }
 footer.page-footer{
     background-color: $base-color-red;
