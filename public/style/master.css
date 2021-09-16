@@ -69,6 +69,25 @@ header .overlay .btn {
   background-color: #C73930;
 }
 
+#main {
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+#main .parallax-container {
+  z-index: 1;
+}
+
+#about {
+  padding: 1em;
+  background-color: white;
+}
+
+#about .tagline {
+  font-weight: 800;
+  text-align: center;
+}
+
 #services {
   background-color: #ebebeb;
   padding: 1em;
@@ -89,26 +108,21 @@ header .overlay .btn {
           justify-content: space-evenly;
 }
 
-.card-wrapper .col:nth-child(3) {
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+.card-wrapper .card-image img {
+  aspect-ratio: 7/5;
 }
 
-.card-wrapper .col:nth-child(3) .card {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.card-wrapper .col:nth-child(3) img {
-  padding: 0 3em;
-  margin: 0 1em;
-}
-
-.card-wrapper .col:nth-child(3) .card-content {
-  padding: 0 1em;
-  text-align: center;
+#contact .btn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .contact-form {
