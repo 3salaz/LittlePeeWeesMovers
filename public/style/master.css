@@ -50,28 +50,24 @@ nav ul li:hover {
   background-color: #575918;
 }
 
-header .overlay {
+.overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 1;
 }
 
-header .overlay p {
+.overlay p {
   font-family: 'Luckiest Guy', cursive;
   color: #ebebeb;
   font-size: 3em;
 }
 
-header .overlay .btn {
+.overlay .btn {
   background-color: #C73930;
-}
-
-#main {
-  background-image: -webkit-gradient(linear, left top, right top, from(#fa709a), to(#fee140));
-  background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 #main .parallax-container {
@@ -89,7 +85,7 @@ header .overlay .btn {
 }
 
 #services {
-  background-color: #ebebeb;
+  background-color: #ffd900;
   padding: 1em;
 }
 
@@ -112,17 +108,28 @@ header .overlay .btn {
   aspect-ratio: 7/5;
 }
 
+#contact {
+  margin-bottom: 0;
+}
+
 #contact .btn-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .btn-list .btn {
+  margin: 1em;
 }
 
 .contact-form {
