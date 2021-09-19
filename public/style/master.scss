@@ -45,7 +45,10 @@ nav{
             }
         }
         li:hover{
-            background-color: $base-color-green;
+            background-color: $base-color-white;
+            a{
+                color: $base-color-red;
+            }
         }
     }
 }

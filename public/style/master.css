@@ -47,7 +47,11 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background-color: #575918;
+  background-color: #ebebeb;
+}
+
+nav ul li:hover a {
+  color: #C73930;
 }
 
 .overlay {
