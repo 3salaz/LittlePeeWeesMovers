@@ -38,26 +38,14 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-    <!-- Action BTN -->
-    <div class="fixed-action-btn">
-        <a class="btn-floating btn-large green">
-          <i class="large material-icons">call</i>
-        </a>
-        <!-- <ul>
-          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-        </ul> -->
-      </div>
-    <main class="row" id="main">
+    <main id="main">
         <header class="full-width-responsive">
             <div class="parallax-container">
                 <div class="parallax">
                     <img src="./images/moving-boxes-2.jpeg">
                     <div class="overlay">
                         <p>Need Reliable Movers?</p>
-                        <button data-target="modal1" class="btn modal-trigger center"><a href="#contact">Get A Quote</a></button>
+                        <button class="btn center"><a class="white-text" href="#contact">Get A Quote</a></button>
                     </div>
                 </div>
             </div>
@@ -83,12 +71,12 @@
                             </div>
                             <div class="card-reveal">
                               <span class="card-title grey-text text-darken-4">Moving<i class="material-icons right">close</i></span>
-                              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                              <p>Call of email us to know about our current rates on moving!</p>
                             </div>
                         </div>
                     </div>
                     <div class="col s12 m6">
-                        <div class="card">
+                        <div class="card z-depth-4">
                             <div class="card-image waves-effect waves-block waves-light">
                               <img class="activator" src="./images/staging-2.jpeg">
                             </div>
@@ -98,28 +86,38 @@
                             </div>
                             <div class="card-reveal">
                               <span class="card-title grey-text text-darken-4">Staging Services<i class="material-icons right">close</i></span>
-                              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                              <p>Call of email us to know about our current rates on moving!</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="row scrollspy">
-            <div class="container">
-                <h3 class="center">Let's schedule your next move!</h3>
-                <p class="center">Email For or Call For Rates And Quotes!🚀</p>
-                <div class="row">
-                    <div class="container btn-list">
-                        <div class="col s6 btn">
-                            <a href="mailto:test@example.com?subject=Quote | Little Pee Wee's Movers&body=What service(s) are you looking for?" class="black-text">Email |<i class="material-icons">email</i></a>
-                        </div>
-                        <div class=" col s6 btn yellow ">
-                            <a href="" class="black-text">Call |<i class="material-icons">call</i></a>
-                        </div>
-                    </div>
+        <section id="contact" class="scrollspy">
+          <div class="full-width-responsive">
+            <div class="parallax-container">
+                <div class="parallax">
+                    <img src="./images/bridge-sf.jpeg">
+                    <div class="container overlay white">
+                      <!-- <h3 class="center">Let's schedule your next move!</h3 -->
+                      <p class="center black-text">Email or Call For Rates And Quotes!🚀</p>
+                      <div class="row">
+                          <div class="container btn-list">
+                              <div class="col s6 btn red">
+                                  <a href="mailto:test@example.com?subject=Quote | Little Pee Wee's Movers&body=What service(s) are you looking for?" class="white-text">Email |<i class="material-icons">email</i></a>
+                              </div>
+                              <div class=" col s6 btn yellow ">
+                                  <a href="4156941330" class="black-text">415-694-1330 |<i class="material-icons">call</i></a>
+                              </div>
+                              <div class=" col s6 btn red ">
+                                <a href="4153061969" class="white-text">415-306-1969 |<i class="material-icons">call</i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                 </div>
             </div>
+          </div> 
         </section>
     </main>
     <footer class="page-footer">
@@ -147,7 +145,26 @@
           </div>
         </div>
     </footer>
-    <!-- Compiled and minified JavaScript -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyA1ooHgPZU_5qAKPYEwCrqcy2WteFjj37g",
+        authDomain: "peeweemovers.firebaseapp.com",
+        projectId: "peeweemovers",
+        storageBucket: "peeweemovers.appspot.com",
+        messagingSenderId: "1037281888141",
+        appId: "1:1037281888141:web:92e56fef3db4d375559fc4"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+    <!-- Materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
