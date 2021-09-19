@@ -47,7 +47,11 @@ nav ul li a {
 }
 
 nav ul li:hover {
-  background-color: #575918;
+  background-color: #ebebeb;
+}
+
+nav ul li:hover a {
+  color: #C73930;
 }
 
 .overlay {
@@ -63,7 +67,9 @@ nav ul li:hover {
 .overlay p {
   font-family: 'Luckiest Guy', cursive;
   color: #ebebeb;
-  font-size: 3em;
+  font-size: 2.5em;
+  padding: 0 1em;
+  margin: 1em 0 0 0;
 }
 
 .overlay .btn {
@@ -130,6 +136,10 @@ nav ul li:hover {
 
 #contact .btn-list .btn {
   margin: 1em;
+}
+
+#contact .overlay {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .contact-form {

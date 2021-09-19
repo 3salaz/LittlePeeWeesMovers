@@ -45,7 +45,10 @@ nav{
             }
         }
         li:hover{
-            background-color: $base-color-green;
+            background-color: $base-color-white;
+            a{
+                color: $base-color-red;
+            }
         }
     }
 }
@@ -60,7 +63,9 @@ nav{
         p{
             font-family: 'Luckiest Guy', cursive;
             color: $base-color-white;
-            font-size: 3em;
+            font-size: 2.5em;
+            padding: 0 1em;
+            margin: 1em 0 0 0;
         }
         .btn{
             background-color: $base-color-red;
@@ -104,6 +109,9 @@ nav{
         .btn{
             margin: 1em;
         }
+    }
+    .overlay{
+        background-color: rgba(255, 255, 255, 0.8);
     }
 }
 .contact-form{
